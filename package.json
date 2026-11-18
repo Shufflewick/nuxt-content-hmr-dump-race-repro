@@ -1,0 +1,17 @@
+{
+  "name": "nuxt-content-hmr-dump-race-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-b.mjs",
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "check-order": "node scripts/check-order.mjs"
+  },
+  "dependencies": {
+    "@nuxt/content": "3.17.0",
+    "nuxt": "^4.6.4",
+    "vue": "^3.5.43",
+    "vue-router": "^5.3.1"
+  }
+}
